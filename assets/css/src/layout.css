@@ -1,5 +1,7 @@
 /* layout.css */
 
+/* 오디오클립 */
+/* main */
 .wrap{
 	background:#fff;
 	fill:#fff;
@@ -24,13 +26,6 @@
   color: #fff;
 }
 
-/* 이미지 공통 */
-.icon, .image, .logo, .text_image{
-	display: inline-block;
-	background-size: 385px 365px;
-	background-image: url(https://audioclip.pstatic.net/static/media/sp_audioclip_m.efbf0240.png);
-	vertical-align: top;
-}
 
 
 /* header */
@@ -174,11 +169,6 @@
 
 /* container */
 .container{
-	overflow:hidden;
-	padding:65px 0 0;
-  min-height: -webkit-calc(100% - 50px);
-  min-height: calc(100% - 50px);
-  bottom: 50px;
 }
 /* main */
 .sec-main{
@@ -187,21 +177,21 @@
 
 /* footer */
 .footer{
-	padding: 38px 20px 100px;
-	background-color: #f6f8fa;
+	padding: 30px 20px 60px;
+	background-color: #f7f7f7;
 	color: #959595;
 }
 .footer_inner{
 	background-color: inherit;
 }
 .footer_logo .link_logo{
-	width: 110px;
-  height: 28px;
-  background-position: -215px -138px;
+  height: 20px;
+	line-height: 20px;
+	color:#555;
 }
 .footer_notice{
-	margin-top: 30px;
-	line-height: 19px;
+	margin-top: 15px;
+	line-height: 20px;
 }
 .button_license{
 	position: relative;
@@ -224,8 +214,7 @@
   letter-spacing: -1px;
 }
 .footer_license{
-	display: none;
-	margin-top: 23px;
+	margin-top: 15px;
 }
 .footer_license .license_item{
 	margin-bottom: 7px;
@@ -245,7 +234,7 @@
 	vertical-align: top;
 }
 .footer_menu{
-	margin-top: 33px;
+	margin-top: 20px;
 }
 .footer_menu .menu_item{
 	display: inline-block;

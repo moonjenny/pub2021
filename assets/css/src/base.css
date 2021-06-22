@@ -42,7 +42,8 @@ table,
 td,
 textarea,
 th,
-ul {
+ul,
+pre {
   margin: 0;
   padding: 0;
 }
