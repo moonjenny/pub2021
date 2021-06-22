@@ -13,7 +13,7 @@ module.exports = function(grunt) {
             //all: ['Gruntfile.js', 'js/test_01.js', 'js/test_02.js'] // 기본적으로 자기자신을 포함하고, 직접 지정해서 사용
             //all: ['js/*'] // 혹은 js 폴더의 모든 파일을 검사
             //all: ['js/etc/*.js'] //측정폴더의 모든 js 검사
-            all: ['build/js/src/*.js'],
+            all: ['assets/js/src/*.js'],
             options:{
                 force: true, // true로 설정시 error 가 있다하더라도 fail 시키지않고 계속 진단
                 reporter: require('jshint-stylish')
@@ -35,13 +35,13 @@ module.exports = function(grunt) {
             },
 
             basic:{
-                src:['build/js/src/*.js'],
-                dest:'build/js/built.js'
+                src:['assets/js/src/*.js'],
+                dest:'assets/js/built.js'
             },
 
             extras:{
-                src:['build/css/src/*.css'],
-                dest:'build/css/styles.css'
+                src:['assets/css/src/*.css'],
+                dest:'assets/css/styles.css'
             },
 
             // Invalid or Missing Files Warning 잘못 또는 누락된 파일 경고 : 해당파일이 없거나 유효하지 않으면 경고
@@ -66,8 +66,8 @@ module.exports = function(grunt) {
                 //beautify: true // 디버깅이나 문제해결을 위해 사용
             },
             build: {
-                src: 'build/js/built.js',
-                dest: 'build/js/built.min.js'
+                src: 'assets/js/built.js',
+                dest: 'assets/js/built.min.js'
             }
         },
 
@@ -79,9 +79,9 @@ module.exports = function(grunt) {
         cssmin:{
             minify:{
                 expand: true,
-                cwd: "build/css/", // css 폴더 위치
+                cwd: "assets/css/", // css 폴더 위치
                 src:['*.css', '!*.min.css'], // 파일지정, 이때 .min.css 는 제외한다.
-                dest:'build/css', // 출력폴더 지정
+                dest:'assets/css', // 출력폴더 지정
                 ext:".min.css" // 확장자 지정
             },
             options:{

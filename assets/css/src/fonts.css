@@ -1,0 +1,114 @@
+/* webfont */
+
+@font-face {
+	font-family: NanumBarunGothic;
+	src:
+		local(※),
+		url(../font/NanumBarunGothic.eot) format('eot'),
+		url(../font/NanumBarunGothic.woff) format('woff'),
+		url(../font/NanumBarunGothic.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: NanumBarunGothicBold;
+	src:
+		local(※),
+		url(../font/NanumBarunGothicBold.eot) format('eot'),
+		url(../font/NanumBarunGothicBold.woff) format('woff'),
+		url(../font/NanumBarunGothicBold.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: NanumBarunGothicLight;
+	src:
+		local(※),
+		url(../font/NanumBarunGothicLight.eot) format('eot'),
+		url(../font/NanumBarunGothicLight.woff) format('woff'),
+		url(../font/NanumBarunGothicLight.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: Raleway-Thin;
+	src:
+		local(※),
+		url(../font/raleway-extralight.svg) format('svg'),
+		url(../font/raleway-extralight.eot) format('eot'),
+		url(../font/raleway-extralight.woff) format('woff'),
+		url(../font/raleway-extralight.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: Raleway-Bold;
+	src:
+		local(※),
+		url(../font/raleway-bold-webfont.eot) format('eot'),
+		url(../font/raleway-bold-webfont.woff) format('woff'),
+		url(../font/raleway-bold-webfont.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: Microsoft-YaHei;
+	src:
+		local(※),
+		url(../font/MicrosoftYaHei.eot) format('eot'),
+		url(../font/MicrosoftYaHei.woff) format('woff'),
+		url(../font/MicrosoftYaHei.ttf) format('ttf');
+}
+
+
+
+/* 오디오클립 복사 */
+@font-face {
+  font-family: NotosansKR;
+  src: url(https://audioclip.pstatic.net/asset/font/NotoSans-Regular.woff2) format("woff2"), url(https://audioclip.pstatic.net/asset/font/NotoSans-Regular.woff) format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: NotosansKR;
+  src: url(https://audioclip.pstatic.net/asset/font/NotoSans-Medium.woff2) format("woff2"), url(https://audioclip.pstatic.net/asset/font/NotoSans-Medium.woff) format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: NotosansKR;
+  src: url(https://audioclip.pstatic.net/asset/font/NotoSans-Bold.woff2) format("woff2"), url(https://audioclip.pstatic.net/asset/font/NotoSans-Bold.woff) format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(https://audioclip.pstatic.net/asset/font/Roboto-Regular.woff2) format("woff2"), url(https://audioclip.pstatic.net/asset/font/Roboto-Regular.woff) format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(https://audioclip.pstatic.net/asset/font/Roboto-Medium.woff2) format("woff2"), url(https://audioclip.pstatic.net/asset/font/Roboto-Medium.woff) format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(https://audioclip.pstatic.net/asset/font/Roboto-Bold.woff2) format("woff2"), url(https://audioclip.pstatic.net/asset/font/Roboto-Bold.woff) format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: NanumSquare;
+  src: url(https://audioclip.pstatic.net/asset/font/NanumSquareR.woff2) format("woff2"), url(https://audioclip.pstatic.net/asset/font/NanumSquareR.woff) format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: NanumSquare;
+  src: url(https://audioclip.pstatic.net/asset/font/NanumSquareB.woff2) format("woff2"), url(https://audioclip.pstatic.net/asset/font/NanumSquareB.woff) format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: GgothicSsi;
+  src: url(https://audioclip.pstatic.net/asset/font/HGGGothicssi-80g.woff2) format("woff2"), url(https://audioclip.pstatic.net/asset/font/HGGGothicssi-80g.woff) format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
