@@ -70,9 +70,37 @@
   <div id="container" class="container">
     <main class="main">main</main>
 
-    <section class="sec-main hide">
-      <h3>클래스명</h3>
-      <div>class-name-type</div>
+    <section class="sec-main">
+      <h3>클래스명 정의</h3>
+      <p>태그명-네임1-네임2-타입1-타입2-숫자</p>
+
+      <p>블럭 클래스명 ?????</p>
+      <div>address - .add-name-type</div>
+      <div>article - .art-name-type</div>
+      <div>aside - .aside-name-type</div>
+      <div>blockquote - .boq-name-type</div>
+      <div>details - .det-name-type</div>
+      <div>dialog - .dia-name-type</div>
+      <div>dd - .dd-name-type</div>
+      <div>div - .div-name-type</div>
+      <div>dl - .dl-name-type</div>
+      <div>dt - .dt-name-type</div>
+      <div>fieldset - .fis-name-type</div>
+      <div>figcaption - .fic-name-type</div>
+      <div>figure - .fig-name-type</div>
+      <div>footer - .footer-name-type</div>
+      <div>form - .form-name-type</div>
+      <div>h1~6 - .h1-name-type</div>
+      <div>header - .header-name-type</div>
+      <div>li - .li-name-type</div>
+      <div>main - .main-name-type</div>
+      <div>nav - .nav-name-type</div>
+      <div>ol - .ol-name-type</div>
+      <div>p - .p-name-type</div>
+      <div>pre - .pre-name-type</div>
+      <div>section - .sec-name-type</div>
+      <div>table - .table-name-type</div>
+      <div>ul - .ul-name-type</div>
     </section>
     <!-- //sec-main -->
 
@@ -80,14 +108,14 @@
       <h2>html 레이아웃</h2>
 
       <pre style="font-size:13px;line-height:1.4;">
-      <header> - Defines a header for a document or a section
-      <nav> - Defines a container for navigation links
-      <section> - Defines a section in a document
-      <article> - Defines an independent self-contained article
-      <aside> - Defines content aside from the content (like a sidebar)
-      <footer> - Defines a footer for a document or a section
-      <details> - Defines additional details
-      <summary> - Defines a heading for the <details> element
+      header - Defines a header for a document or a section
+      nav - Defines a container for navigation links
+      section - Defines a section in a document
+      article - Defines an independent self-contained article
+      aside - Defines content aside from the content (like a sidebar)
+      footer - Defines a footer for a document or a section
+      details - Defines additional details
+      summary - Defines a heading for the <details> element
 
       기본인데 잘 지켜지지 않는 레이아웃
       나조차도 제대로 안해서 매번 정리하지만 또 잊어버리겠지
@@ -196,6 +224,14 @@
     </section>
     <section>
 
+      <!-- 뷰포트에 따른 이미지 노출 IE지원하지 않음 -->
+      <picture>
+        <source srcset="https://www.w3schools.com/html/img_smallflower.jpg" media="(max-width: 600px)">
+        <source srcset="https://www.w3schools.com/html/img_flowers.jpg" media="(max-width: 1500px)">
+        <source srcset="https://www.w3schools.com/html/flowers.jpg">
+        <img src="https://www.w3schools.com/html/img_smallflower.jpg" alt="Flowers">
+      </picture>
+
       <div>
         <i class="ico_now">now</i>
       </div>
@@ -259,61 +295,75 @@
       <p>참고사이트: https://poiemaweb.com/css3-transition</p>
     </section>
     <section>
-      <p>time tag</p>
-      <time datetime="2020-07-03T:07:15:15+13:00">2020-07-03</time>
+      <p>time tag IE 지원하지 않음</p>
+      <time datetime="2008-02-14 20:00">Valentines day</time>
     </section>
     <section>
-      <p>?????line</p>
-      <div class="square active">
-        <span class="line top"></span>
-        <span class="line right"></span>
-        <span class="line bottom"></span>
-        <span class="line left"></span>
-      </div>
+      <p>line으로 사각형만들기</p>
+      <div class="line-box">
+        <div class="square">
+          <span class="line-top"></span>
+          <span class="line-right"></span>
+          <span class="line-bottom"></span>
+          <span class="line-left"></span>
+        </div>
+        </div>
       <style>
         .square {
           position: relative;
           display: inline-block;
-          width: 290px;
-          height: 290px;
+          margin:30px;
+          width: 200px;
+          height: 200px;
         }
-        .line {
+        .square span {
           display: inline-block;
           background: #a4b7b1;
           position: absolute;
           z-index: 1;
         }
-        .line.top {
+        .line-top {
           height: 8px;
           left: 0;
           top: 0;
         }
-        .active .line.top {
-          width: 100%;
-          transition: width 0.3s ease-out;
-        }
-        .line.right {
+        .line-right {
           width: 8px;
           height: 100%;
           top: 0;
           right: 0;
           transition: height 0.3s ease-out 0.3s;
         }
-        .line.bottom {
+        .line-bottom {
           width: 100%;
           height: 8px;
           bottom: 0;
-          left: 0;
           transition: width 0.3s ease-out 0.6s;
         }
-        .line.left {
+        .line-left {
           width: 8px;
           height: 100%;
-          top: 0;
           left: 0;
           transition: height 0.3s ease-out .9s;
         }
+        .line-right,.line-left{display: inline-block; width:8px;height:0;background:#a4b7b1;position:absolute;z-index:1}
+        .line-top,.line-bottom{display: inline-block;height:8px;width:0;background:#a4b7b1;position:absolute;z-index:1}
+        .line-top{left:0;top:0}
+        .line-right{top:0;right:0}
+        .line-bottom{right:0;bottom:0}
+        .line-left{bottom:0;left:0}
+        .inview .line-top {transition: width 0.3s ease-out; width: 100%}
+        .inview .line-right {transition: height 0.3s ease-out 0.3s; height: 100%}
+        .inview .line-bottom {transition: width 0.3s ease-out 0.6s; width: 100%}
+        .inview .line-left {transition: height 0.3s ease-out 0.9s; height: 100%}
       </style>
+      <script>
+      $(document).ready(function() {
+        setTimeout(function() {
+          $(".line-box").addClass("inview");
+        }, 2000);
+      });
+      </script>
     </section>
     <!--
     <section>
