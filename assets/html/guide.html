@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
   <link rel="shortcut icon" href="../img/webicon/favicon.ico"><!-- 웹용 -->
   <link rel="apple-touch-icon-precomposed" href="../img/webicon/favicon.png"><!-- iOS계열 아이콘 -->
   <link rel="apple-touch-icon-precomposed" href="../img/webicon/favicon.png" sizes="114x114">
@@ -75,7 +75,7 @@
       <p>태그명-네임1-네임2-타입1-타입2-숫자</p>
 
       <p>블럭 클래스명 ?????</p>
-      <div>address - .add-name-type</div>
+      <!-- <div>address - .add-name-type</div>
       <div>article - .art-name-type</div>
       <div>aside - .aside-name-type</div>
       <div>blockquote - .boq-name-type</div>
@@ -100,7 +100,7 @@
       <div>pre - .pre-name-type</div>
       <div>section - .sec-name-type</div>
       <div>table - .table-name-type</div>
-      <div>ul - .ul-name-type</div>
+      <div>ul - .ul-name-type</div> -->
     </section>
     <!-- //sec-main -->
 
@@ -503,7 +503,21 @@
 
     <section>
       <h1>정리중 정리중 정리중</h1>
-      <pre style="font-size:13px;line-height:1.4;">
+      <pre>
+        폰트 사이즈, 16px = 1rem
+
+        var : color,font-size??? (ie 미지원)
+:root {
+  --main-bg-color: pink;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+        https://developer.mozilla.org/ko/docs/Web/CSS/var()
+
+      </pre>
+      <pre style="font-size:16px;line-height:1.4;">
       파일명 통일
 
       1. 대문자 X

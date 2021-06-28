@@ -7,8 +7,20 @@ font-family: 'Quicksand', sans-serif;   400,500,700
 font-family: 'Roboto Mono', monospace;  300,400,500
 */
 
+/* font-size */
+/* 기본 : 16px */
+/* 1rem = 16px */
 
+/* color IE 미지원 */
+:root {
+  --main-bg-color: #f5f5f5;
+}
 
+body {
+  background-color: var(--main-bg-color);
+}
+
+.main {font-size:1.4rem;}
 
 /** form **/
 /* checkbox */

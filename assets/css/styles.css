@@ -1,4 +1,4 @@
-/* css 수정 - v1.0.2 - 2021-06-25 */@charset "utf-8";
+/* css 수정 - v1.0.2 - 2021-06-28 */@charset "utf-8";
 /* reset */
 
 body,
@@ -7,6 +7,7 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-size:62.5%;
   background-color: #fff;
 }
 article,
@@ -53,7 +54,6 @@ input,
 select,
 table,
 textarea {
-  font-size: 16px;
   color: #222;
   line-height: 1.2;
 }
@@ -145,8 +145,20 @@ font-family: 'Quicksand', sans-serif;   400,500,700
 font-family: 'Roboto Mono', monospace;  300,400,500
 */
 
+/* font-size */
+/* 기본 : 16px */
+/* 1rem = 16px */
 
+/* color IE 미지원 */
+:root {
+  --main-bg-color: #f5f5f5;
+}
 
+body {
+  background-color: var(--main-bg-color);
+}
+
+.main {font-size:1.4rem;}
 
 /** form **/
 /* checkbox */
@@ -903,6 +915,37 @@ h4{
 	0%,20%,40%,60%,80%,100% {
 		-webkit-transform: translateY(2px);
 	}
+}
+@media screen and (max-width:1280px){
+  body {
+    background: gray
+  }
+}
+
+@media screen and (max-width:1080px){
+  body {
+    background: skyblue
+  }
+}
+
+@media screen and (max-width:768px){
+  body {
+    background: green
+  }
+}
+
+@media screen and (max-width:640px){
+  body {
+    background: orange
+  }
+
+}
+
+@media screen and (max-width:359px){
+  body {
+    background: pink
+  }
+
 }
 .slick-slider
 {
